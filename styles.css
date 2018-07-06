@@ -1,0 +1,7 @@
+body {
+  display: flex;
+}
+
+#log {
+  margin-left: 2em;
+}

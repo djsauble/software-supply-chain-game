@@ -2,31 +2,11 @@
 <html>
   <head>
     <link href="styles.css" type="text/css" rel="stylesheet"/>
-    <script src="game.js"></script>
+    <script src="js/vendor/vue.js"></script>
+    <script type="module" src="js/game.js"></script>
   </head>
-  <body onload="start();">
-    <div id="controls">
-      <div>
-        <strong>Elapsed: </strong>
-        <span id="elapsed">0 days</span>
-      </div>
-      <div>
-        <strong>Funds: </strong>
-        <span id="funds">$100,000 (-$8,333/mo)</span>
-      </div>
-      <div id="actions">
-        <h3 id="features">0 features</h3>
-        <button id="build" onclick="buildFeature();">Build Feature (+$50,000/mo)</button>
-
-        <h3 id="developers">1 developer</h3>
-        <button id="hire" onclick="hireDeveloper();">Hire Developer (-$8,333/mo)</button>
-
-        <h3>Technology</h3>
-        <button id="buy_repo_manager" onclick="buyRepoManager();">Buy Repo Manager (-$10/mo)</button><br/>
-        <button id="buy_firewall" onclick="buyFirewall();">Buy Repo Firewall (-$30/mo)</button><br/>
-        <button id="buy_governance" onclick="buyGovernance();">Buy Governance (-$65/mo)</button>
-      </div>
+  <body>
+    <div id="app">
     </div>
-    <div id="log">Welcome to the Supply Chain Software game!</div>
   </body>
 </html>
